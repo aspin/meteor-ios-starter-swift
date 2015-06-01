@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "meteor_ios_starter_swift.AppDelegate.itemAdded (meteor_ios_starter_swift.AppDelegate)(ObjectiveC.NSNotification) -&gt; ():AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "res.userInfo">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "meteor_ios_starter_swift.AppDelegate.itemAdded (meteor_ios_starter_swift.AppDelegate)(Swift.AnyObject) -&gt; ():AppDelegate.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

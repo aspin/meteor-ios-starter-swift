@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01B402D0FF640300346344D3 /* Pods-meteor-ios-starter-swift-ObjectiveDDP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B2A10AE350CFED5BAEE28A /* Pods-meteor-ios-starter-swift-ObjectiveDDP-dummy.m */; };
+		2443C43152A1EB91050D1B7C /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = FA3BF2068CE546A5A30A797D /* base64.h */; };
+		3A7428EDA255A11F072773D7 /* M13OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F055FB948B278B45E951985 /* M13OrderedDictionary.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3FBC055D52E31BB4A334AF02 /* DependencyProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 386BE93B79DAC0B4574A73FA /* DependencyProvider.m */; };
+		4365C42544C1F4D90B9D3AAA /* ObjectiveDDP.h in Headers */ = {isa = PBXBuildFile; fileRef = 52C140566A1A1A2846A9A433 /* ObjectiveDDP.h */; };
+		4A1A5E308A48EC9772C4B399 /* BSONIdGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E1A2D83A220388E92E021B7 /* BSONIdGenerator.h */; };
+		50BCBAC98FE7EEEB58719715 /* DependencyProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E332BBA2EAD0A7F7DD4F5B3 /* DependencyProvider.h */; };
+		5578FE44C6FB666607483212 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44F919D376FCB9967CD13E1 /* Security.framework */; };
+		617BB643ED8EF6E6312CD974 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8DE8765AD7804B9109BEE4 /* NSData+SRB64Additions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6F83DA6724807B4070D23EE6 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 300893FE94A3ECB0014E0524 /* SRWebSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		71C3682D3204F947A55480CB /* NSData+SRB64Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EB6A610B0323327DC529C0 /* NSData+SRB64Additions.h */; };
+		72DC0AAD59B9EC3E80184F93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B5DCFBBCFCB00CCF9A34FF /* Foundation.framework */; };
+		7EFCBA1EED240F20BE57F31F /* ObjectiveDDP.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD8119BD1B258F161B79D08 /* ObjectiveDDP.m */; };
+		8036FD33FD014E77CEE691C1 /* Pods-meteor-ios-starter-swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF38A2E34F04E13AE6AA3F57 /* Pods-meteor-ios-starter-swift-dummy.m */; };
+		846506CBBF5A2ADCE1769EC5 /* Pods-meteor-ios-starter-swift-M13OrderedDictionary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C35CEEE5A8234A6AF3ADCC /* Pods-meteor-ios-starter-swift-M13OrderedDictionary-dummy.m */; };
+		A264E9198984073BA0DA9CBE /* M13OrderedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E55A95CC6D5C17D20129388 /* M13OrderedDictionary.h */; };
+		A3609A6DC34937749968F515 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B5DCFBBCFCB00CCF9A34FF /* Foundation.framework */; };
+		A4FB0106EF5A1E713D8C5F29 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 73BFB64E378D611E87542520 /* base64.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A4FDB01A44F106A15CC28DAD /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = A6412F3E940D7C15D8A4AA0B /* SRWebSocket.h */; };
+		B36FEEE999BA86C93EF55E83 /* MeteorClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 456C1A79D23290CB054AA7B8 /* MeteorClient.m */; };
+		B7827F6845FF5FAC62586E1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B5DCFBBCFCB00CCF9A34FF /* Foundation.framework */; };
+		C1707C7D80C776F4BA4D28A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B5DCFBBCFCB00CCF9A34FF /* Foundation.framework */; };
+		C27AC3D25858F0F6CBB23768 /* MeteorClient+Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = D586D60A6E920BBBFA0CF018 /* MeteorClient+Parsing.m */; };
+		C5A43CB2412E2306873A3F41 /* MeteorClient+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F13B88959EE1113CB838B5E /* MeteorClient+Private.h */; };
+		CD1428E08AC0E07787387911 /* BSONIdGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0E021D268BB5B279C0ED4A /* BSONIdGenerator.m */; };
+		D05B5A687195C749A4F18A79 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A341F58B2B539523B0FC13C /* CFNetwork.framework */; };
+		E1BD0DF99ADB23BB84194FCF /* Pods-meteor-ios-starter-swift-SocketRocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3712CBDBA8AAE512A10807A /* Pods-meteor-ios-starter-swift-SocketRocket-dummy.m */; };
+		F323C465B79491E13294E58A /* MeteorClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 029DB35BD995493D22D171ED /* MeteorClient.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34697D61D7F52A097CA05FB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 780011EBABEA03297CD5329C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D8D81BC0127C3FEBBF59847;
+			remoteInfo = "Pods-meteor-ios-starter-swift-M13OrderedDictionary";
+		};
+		36066375D30A7BD363F0ECA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 780011EBABEA03297CD5329C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB0FB78E1BB4A8ECB217637A;
+			remoteInfo = "Pods-meteor-ios-starter-swift-SocketRocket";
+		};
+		8EB59941AC545286626D2E55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 780011EBABEA03297CD5329C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB0FB78E1BB4A8ECB217637A;
+			remoteInfo = "Pods-meteor-ios-starter-swift-SocketRocket";
+		};
+		980D71B3202AA30D24A2D762 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 780011EBABEA03297CD5329C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D8D81BC0127C3FEBBF59847;
+			remoteInfo = "Pods-meteor-ios-starter-swift-M13OrderedDictionary";
+		};
+		E74A72602BB6D061631DD162 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 780011EBABEA03297CD5329C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EDECCBA4B53EAF744DB1BA3;
+			remoteInfo = "Pods-meteor-ios-starter-swift-ObjectiveDDP";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		029DB35BD995493D22D171ED /* MeteorClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MeteorClient.h; path = ObjectiveDDP/MeteorClient.h; sourceTree = "<group>"; };
+		037B239F8FB55F1F53AB30B9 /* Pods-meteor-ios-starter-swift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-meteor-ios-starter-swift-resources.sh"; sourceTree = "<group>"; };
+		0955F0E65B0DEF38EB1F2324 /* libPods-meteor-ios-starter-swift-M13OrderedDictionary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-meteor-ios-starter-swift-M13OrderedDictionary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A341F58B2B539523B0FC13C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		0C8DE8765AD7804B9109BEE4 /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+SRB64Additions.m"; path = "SocketRocket/NSData+SRB64Additions.m"; sourceTree = "<group>"; };
+		17A4AC11F3A8DF28EA4E6F65 /* Pods-meteor-ios-starter-swift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-meteor-ios-starter-swift-acknowledgements.plist"; sourceTree = "<group>"; };
+		18759ECD9DF5D356630B7533 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1F13B88959EE1113CB838B5E /* MeteorClient+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MeteorClient+Private.h"; path = "ObjectiveDDP/MeteorClient+Private.h"; sourceTree = "<group>"; };
+		2336F65F22F59112AD879374 /* Pods-meteor-ios-starter-swift-M13OrderedDictionary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-meteor-ios-starter-swift-M13OrderedDictionary-prefix.pch"; sourceTree = "<group>"; };
+		2630348D3DE19A7D322B6AB6 /* Pods-meteor-ios-starter-swift-M13OrderedDictionary-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-meteor-ios-starter-swift-M13OrderedDictionary-Private.xcconfig"; sourceTree = "<group>"; };
+		2E1A2D83A220388E92E021B7 /* BSONIdGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSONIdGenerator.h; path = ObjectiveDDP/BSONIdGenerator.h; sourceTree = "<group>"; };
+		300893FE94A3ECB0014E0524 /* SRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SRWebSocket.m; path = SocketRocket/SRWebSocket.m; sourceTree = "<group>"; };
+		386BE93B79DAC0B4574A73FA /* DependencyProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DependencyProvider.m; path = ObjectiveDDP/DependencyProvider.m; sourceTree = "<group>"; };
+		3FDCACAD1B42461FC12BB7B9 /* libPods-meteor-ios-starter-swift-SocketRocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-meteor-ios-starter-swift-SocketRocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D1D7EB4DB96879A3EE4456 /* Pods-meteor-ios-starter-swift-ObjectiveDDP.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-meteor-ios-starter-swift-ObjectiveDDP.xcconfig"; sourceTree = "<group>"; };
+		456C1A79D23290CB054AA7B8 /* MeteorClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MeteorClient.m; path = ObjectiveDDP/MeteorClient.m; sourceTree = "<group>"; };
+		47F2FE57F94759F19D1C6EEE /* Pods-meteor-ios-starter-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-meteor-ios-starter-swift.release.xcconfig"; sourceTree = "<group>"; };
+		51C35CEEE5A8234A6AF3ADCC /* Pods-meteor-ios-starter-swift-M13OrderedDictionary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-meteor-ios-starter-swift-M13OrderedDictionary-dummy.m"; sourceTree = "<group>"; };
+		52C140566A1A1A2846A9A433 /* ObjectiveDDP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectiveDDP.h; path = ObjectiveDDP/ObjectiveDDP.h; sourceTree = "<group>"; };
+		57B2A10AE350CFED5BAEE28A /* Pods-meteor-ios-starter-swift-ObjectiveDDP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-meteor-ios-starter-swift-ObjectiveDDP-dummy.m"; sourceTree = "<group>"; };
+		6617865C17B860732C958CB4 /* Pods-meteor-ios-starter-swift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-meteor-ios-starter-swift-acknowledgements.markdown"; sourceTree = "<group>"; };
+		68E4AAFF0CBC78629E17DA64 /* Pods-meteor-ios-starter-swift-ObjectiveDDP-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-meteor-ios-starter-swift-ObjectiveDDP-prefix.pch"; sourceTree = "<group>"; };
+		6E55A95CC6D5C17D20129388 /* M13OrderedDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = M13OrderedDictionary.h; sourceTree = "<group>"; };
+		73BFB64E378D611E87542520 /* base64.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = base64.c; path = SocketRocket/base64.c; sourceTree = "<group>"; };
+		7B6520B363C9AFF43AB642E4 /* libPods-meteor-ios-starter-swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-meteor-ios-starter-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F055FB948B278B45E951985 /* M13OrderedDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = M13OrderedDictionary.m; sourceTree = "<group>"; };
+		8594462E8028DA740A57C3FB /* Pods-meteor-ios-starter-swift-ObjectiveDDP-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-meteor-ios-starter-swift-ObjectiveDDP-Private.xcconfig"; sourceTree = "<group>"; };
+		89AA32CA790368E4DB929E98 /* Pods-meteor-ios-starter-swift-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-meteor-ios-starter-swift-environment.h"; sourceTree = "<group>"; };
+		8E332BBA2EAD0A7F7DD4F5B3 /* DependencyProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DependencyProvider.h; path = ObjectiveDDP/DependencyProvider.h; sourceTree = "<group>"; };
+		A3712CBDBA8AAE512A10807A /* Pods-meteor-ios-starter-swift-SocketRocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-meteor-ios-starter-swift-SocketRocket-dummy.m"; sourceTree = "<group>"; };
+		A6412F3E940D7C15D8A4AA0B /* SRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SRWebSocket.h; path = SocketRocket/SRWebSocket.h; sourceTree = "<group>"; };
+		AB0E021D268BB5B279C0ED4A /* BSONIdGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSONIdGenerator.m; path = ObjectiveDDP/BSONIdGenerator.m; sourceTree = "<group>"; };
+		ADD8119BD1B258F161B79D08 /* ObjectiveDDP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ObjectiveDDP.m; path = ObjectiveDDP/ObjectiveDDP.m; sourceTree = "<group>"; };
+		B3E4EF394D955DBE94938541 /* Pods-meteor-ios-starter-swift-SocketRocket-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-meteor-ios-starter-swift-SocketRocket-Private.xcconfig"; sourceTree = "<group>"; };
+		B44F919D376FCB9967CD13E1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		CAD7E818521EB23C06DD5A99 /* Pods-meteor-ios-starter-swift-SocketRocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-meteor-ios-starter-swift-SocketRocket.xcconfig"; sourceTree = "<group>"; };
+		CFC73BAB26CBA9511B31BC63 /* libPods-meteor-ios-starter-swift-ObjectiveDDP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-meteor-ios-starter-swift-ObjectiveDDP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D586D60A6E920BBBFA0CF018 /* MeteorClient+Parsing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MeteorClient+Parsing.m"; path = "ObjectiveDDP/MeteorClient+Parsing.m"; sourceTree = "<group>"; };
+		DF37B5DBEBDEA0E23F4A4D54 /* Pods-meteor-ios-starter-swift-M13OrderedDictionary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-meteor-ios-starter-swift-M13OrderedDictionary.xcconfig"; sourceTree = "<group>"; };
+		DF38A2E34F04E13AE6AA3F57 /* Pods-meteor-ios-starter-swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-meteor-ios-starter-swift-dummy.m"; sourceTree = "<group>"; };
+		E2B5DCFBBCFCB00CCF9A34FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E8EB6A610B0323327DC529C0 /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+SRB64Additions.h"; path = "SocketRocket/NSData+SRB64Additions.h"; sourceTree = "<group>"; };
+		F40D340C7DA462E5E4D7F7C3 /* Pods-meteor-ios-starter-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-meteor-ios-starter-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		FA3BF2068CE546A5A30A797D /* base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = base64.h; path = SocketRocket/base64.h; sourceTree = "<group>"; };
+		FA8B6DA07B455E0C61D8955F /* Pods-meteor-ios-starter-swift-SocketRocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-meteor-ios-starter-swift-SocketRocket-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		153EFF2F8C6928B2FB380432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1707C7D80C776F4BA4D28A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC900451A6CF3AF7B7BD7A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7827F6845FF5FAC62586E1D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		683D60AB2DB65244AB53095C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3609A6DC34937749968F515 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F904C19C56BE9F138078418F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05B5A687195C749A4F18A79 /* CFNetwork.framework in Frameworks */,
+				72DC0AAD59B9EC3E80184F93 /* Foundation.framework in Frameworks */,
+				5578FE44C6FB666607483212 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14E1F8EEFD8823622C70136E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42712F56FDE7D0276A87EE37 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D1AC6D95048C0B07FD616D2 /* Pods-meteor-ios-starter-swift */ = {
+			isa = PBXGroup;
+			children = (
+				6617865C17B860732C958CB4 /* Pods-meteor-ios-starter-swift-acknowledgements.markdown */,
+				17A4AC11F3A8DF28EA4E6F65 /* Pods-meteor-ios-starter-swift-acknowledgements.plist */,
+				DF38A2E34F04E13AE6AA3F57 /* Pods-meteor-ios-starter-swift-dummy.m */,
+				89AA32CA790368E4DB929E98 /* Pods-meteor-ios-starter-swift-environment.h */,
+				037B239F8FB55F1F53AB30B9 /* Pods-meteor-ios-starter-swift-resources.sh */,
+				F40D340C7DA462E5E4D7F7C3 /* Pods-meteor-ios-starter-swift.debug.xcconfig */,
+				47F2FE57F94759F19D1C6EEE /* Pods-meteor-ios-starter-swift.release.xcconfig */,
+			);
+			name = "Pods-meteor-ios-starter-swift";
+			path = "Target Support Files/Pods-meteor-ios-starter-swift";
+			sourceTree = "<group>";
+		};
+		3927A2121EBA11C1055A2518 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D1AC6D95048C0B07FD616D2 /* Pods-meteor-ios-starter-swift */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		42712F56FDE7D0276A87EE37 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0A341F58B2B539523B0FC13C /* CFNetwork.framework */,
+				E2B5DCFBBCFCB00CCF9A34FF /* Foundation.framework */,
+				B44F919D376FCB9967CD13E1 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4BCA35624CAB99E8EECC7A19 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				41D1D7EB4DB96879A3EE4456 /* Pods-meteor-ios-starter-swift-ObjectiveDDP.xcconfig */,
+				8594462E8028DA740A57C3FB /* Pods-meteor-ios-starter-swift-ObjectiveDDP-Private.xcconfig */,
+				57B2A10AE350CFED5BAEE28A /* Pods-meteor-ios-starter-swift-ObjectiveDDP-dummy.m */,
+				68E4AAFF0CBC78629E17DA64 /* Pods-meteor-ios-starter-swift-ObjectiveDDP-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-meteor-ios-starter-swift-ObjectiveDDP";
+			sourceTree = "<group>";
+		};
+		544B5D687ABD1E2455B09964 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF37B5DBEBDEA0E23F4A4D54 /* Pods-meteor-ios-starter-swift-M13OrderedDictionary.xcconfig */,
+				2630348D3DE19A7D322B6AB6 /* Pods-meteor-ios-starter-swift-M13OrderedDictionary-Private.xcconfig */,
+				51C35CEEE5A8234A6AF3ADCC /* Pods-meteor-ios-starter-swift-M13OrderedDictionary-dummy.m */,
+				2336F65F22F59112AD879374 /* Pods-meteor-ios-starter-swift-M13OrderedDictionary-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-meteor-ios-starter-swift-M13OrderedDictionary";
+			sourceTree = "<group>";
+		};
+		59BAD8B80281DF3863145C0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B6520B363C9AFF43AB642E4 /* libPods-meteor-ios-starter-swift.a */,
+				0955F0E65B0DEF38EB1F2324 /* libPods-meteor-ios-starter-swift-M13OrderedDictionary.a */,
+				CFC73BAB26CBA9511B31BC63 /* libPods-meteor-ios-starter-swift-ObjectiveDDP.a */,
+				3FDCACAD1B42461FC12BB7B9 /* libPods-meteor-ios-starter-swift-SocketRocket.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A5E56ACB66815101C425F88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C803827FF85AC32858E9AF0A /* M13OrderedDictionary */,
+				E2455B850B3B15FBCF4D23AB /* ObjectiveDDP */,
+				C4E0073AF48421CDFDEA9A71 /* SocketRocket */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C4E0073AF48421CDFDEA9A71 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				E8EB6A610B0323327DC529C0 /* NSData+SRB64Additions.h */,
+				0C8DE8765AD7804B9109BEE4 /* NSData+SRB64Additions.m */,
+				A6412F3E940D7C15D8A4AA0B /* SRWebSocket.h */,
+				300893FE94A3ECB0014E0524 /* SRWebSocket.m */,
+				73BFB64E378D611E87542520 /* base64.c */,
+				FA3BF2068CE546A5A30A797D /* base64.h */,
+				CF943DF4F99168CF7E6B364E /* Support Files */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		C803827FF85AC32858E9AF0A /* M13OrderedDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				6E55A95CC6D5C17D20129388 /* M13OrderedDictionary.h */,
+				7F055FB948B278B45E951985 /* M13OrderedDictionary.m */,
+				544B5D687ABD1E2455B09964 /* Support Files */,
+			);
+			path = M13OrderedDictionary;
+			sourceTree = "<group>";
+		};
+		CF943DF4F99168CF7E6B364E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAD7E818521EB23C06DD5A99 /* Pods-meteor-ios-starter-swift-SocketRocket.xcconfig */,
+				B3E4EF394D955DBE94938541 /* Pods-meteor-ios-starter-swift-SocketRocket-Private.xcconfig */,
+				A3712CBDBA8AAE512A10807A /* Pods-meteor-ios-starter-swift-SocketRocket-dummy.m */,
+				FA8B6DA07B455E0C61D8955F /* Pods-meteor-ios-starter-swift-SocketRocket-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-meteor-ios-starter-swift-SocketRocket";
+			sourceTree = "<group>";
+		};
+		E2455B850B3B15FBCF4D23AB /* ObjectiveDDP */ = {
+			isa = PBXGroup;
+			children = (
+				2E1A2D83A220388E92E021B7 /* BSONIdGenerator.h */,
+				AB0E021D268BB5B279C0ED4A /* BSONIdGenerator.m */,
+				8E332BBA2EAD0A7F7DD4F5B3 /* DependencyProvider.h */,
+				386BE93B79DAC0B4574A73FA /* DependencyProvider.m */,
+				029DB35BD995493D22D171ED /* MeteorClient.h */,
+				456C1A79D23290CB054AA7B8 /* MeteorClient.m */,
+				D586D60A6E920BBBFA0CF018 /* MeteorClient+Parsing.m */,
+				1F13B88959EE1113CB838B5E /* MeteorClient+Private.h */,
+				52C140566A1A1A2846A9A433 /* ObjectiveDDP.h */,
+				ADD8119BD1B258F161B79D08 /* ObjectiveDDP.m */,
+				4BCA35624CAB99E8EECC7A19 /* Support Files */,
+			);
+			path = ObjectiveDDP;
+			sourceTree = "<group>";
+		};
+		E641F8F5A0FE25561EAC951F = {
+			isa = PBXGroup;
+			children = (
+				18759ECD9DF5D356630B7533 /* Podfile */,
+				14E1F8EEFD8823622C70136E /* Frameworks */,
+				8A5E56ACB66815101C425F88 /* Pods */,
+				59BAD8B80281DF3863145C0E /* Products */,
+				3927A2121EBA11C1055A2518 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0DC60B73F5082EEDC6913895 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A264E9198984073BA0DA9CBE /* M13OrderedDictionary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		507B8B8DAC2D4C76C77AAEE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A1A5E308A48EC9772C4B399 /* BSONIdGenerator.h in Headers */,
+				50BCBAC98FE7EEEB58719715 /* DependencyProvider.h in Headers */,
+				C5A43CB2412E2306873A3F41 /* MeteorClient+Private.h in Headers */,
+				F323C465B79491E13294E58A /* MeteorClient.h in Headers */,
+				4365C42544C1F4D90B9D3AAA /* ObjectiveDDP.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F44F9B2252C5A7829E1648 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71C3682D3204F947A55480CB /* NSData+SRB64Additions.h in Headers */,
+				A4FDB01A44F106A15CC28DAD /* SRWebSocket.h in Headers */,
+				2443C43152A1EB91050D1B7C /* base64.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		19D4C4FFE133DEB1B7C5C40C /* Pods-meteor-ios-starter-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1464258E2A92CA8EF6213CCE /* Build configuration list for PBXNativeTarget "Pods-meteor-ios-starter-swift" */;
+			buildPhases = (
+				8650F0601EEBA48E9C384E9D /* Sources */,
+				4BC900451A6CF3AF7B7BD7A4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34A1A63F111B9C12B7A10EE0 /* PBXTargetDependency */,
+				323D76AC2D320E56F5C859A5 /* PBXTargetDependency */,
+				5E172EE2FE77D99C541C2C2E /* PBXTargetDependency */,
+			);
+			name = "Pods-meteor-ios-starter-swift";
+			productName = "Pods-meteor-ios-starter-swift";
+			productReference = 7B6520B363C9AFF43AB642E4 /* libPods-meteor-ios-starter-swift.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4EDECCBA4B53EAF744DB1BA3 /* Pods-meteor-ios-starter-swift-ObjectiveDDP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD26D5AAB5822315895C5224 /* Build configuration list for PBXNativeTarget "Pods-meteor-ios-starter-swift-ObjectiveDDP" */;
+			buildPhases = (
+				AE9E34695A7B68B2E9F22F98 /* Sources */,
+				683D60AB2DB65244AB53095C /* Frameworks */,
+				507B8B8DAC2D4C76C77AAEE9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE6E804A616376D6F65D0956 /* PBXTargetDependency */,
+				75EB513B238D66E06C37D98D /* PBXTargetDependency */,
+			);
+			name = "Pods-meteor-ios-starter-swift-ObjectiveDDP";
+			productName = "Pods-meteor-ios-starter-swift-ObjectiveDDP";
+			productReference = CFC73BAB26CBA9511B31BC63 /* libPods-meteor-ios-starter-swift-ObjectiveDDP.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9D8D81BC0127C3FEBBF59847 /* Pods-meteor-ios-starter-swift-M13OrderedDictionary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0A093C4CD80551AA4D28CDA /* Build configuration list for PBXNativeTarget "Pods-meteor-ios-starter-swift-M13OrderedDictionary" */;
+			buildPhases = (
+				9E180420E155BEA68694F0B7 /* Sources */,
+				153EFF2F8C6928B2FB380432 /* Frameworks */,
+				0DC60B73F5082EEDC6913895 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-meteor-ios-starter-swift-M13OrderedDictionary";
+			productName = "Pods-meteor-ios-starter-swift-M13OrderedDictionary";
+			productReference = 0955F0E65B0DEF38EB1F2324 /* libPods-meteor-ios-starter-swift-M13OrderedDictionary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DB0FB78E1BB4A8ECB217637A /* Pods-meteor-ios-starter-swift-SocketRocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A19DBF3ED63A7C26E3EBB282 /* Build configuration list for PBXNativeTarget "Pods-meteor-ios-starter-swift-SocketRocket" */;
+			buildPhases = (
+				8300343988C61AD9B8348381 /* Sources */,
+				F904C19C56BE9F138078418F /* Frameworks */,
+				68F44F9B2252C5A7829E1648 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-meteor-ios-starter-swift-SocketRocket";
+			productName = "Pods-meteor-ios-starter-swift-SocketRocket";
+			productReference = 3FDCACAD1B42461FC12BB7B9 /* libPods-meteor-ios-starter-swift-SocketRocket.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		780011EBABEA03297CD5329C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = AB51A1B3459F560D36FB59D6 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E641F8F5A0FE25561EAC951F;
+			productRefGroup = 59BAD8B80281DF3863145C0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19D4C4FFE133DEB1B7C5C40C /* Pods-meteor-ios-starter-swift */,
+				9D8D81BC0127C3FEBBF59847 /* Pods-meteor-ios-starter-swift-M13OrderedDictionary */,
+				4EDECCBA4B53EAF744DB1BA3 /* Pods-meteor-ios-starter-swift-ObjectiveDDP */,
+				DB0FB78E1BB4A8ECB217637A /* Pods-meteor-ios-starter-swift-SocketRocket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8300343988C61AD9B8348381 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				617BB643ED8EF6E6312CD974 /* NSData+SRB64Additions.m in Sources */,
+				E1BD0DF99ADB23BB84194FCF /* Pods-meteor-ios-starter-swift-SocketRocket-dummy.m in Sources */,
+				6F83DA6724807B4070D23EE6 /* SRWebSocket.m in Sources */,
+				A4FB0106EF5A1E713D8C5F29 /* base64.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8650F0601EEBA48E9C384E9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8036FD33FD014E77CEE691C1 /* Pods-meteor-ios-starter-swift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E180420E155BEA68694F0B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A7428EDA255A11F072773D7 /* M13OrderedDictionary.m in Sources */,
+				846506CBBF5A2ADCE1769EC5 /* Pods-meteor-ios-starter-swift-M13OrderedDictionary-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE9E34695A7B68B2E9F22F98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1428E08AC0E07787387911 /* BSONIdGenerator.m in Sources */,
+				3FBC055D52E31BB4A334AF02 /* DependencyProvider.m in Sources */,
+				C27AC3D25858F0F6CBB23768 /* MeteorClient+Parsing.m in Sources */,
+				B36FEEE999BA86C93EF55E83 /* MeteorClient.m in Sources */,
+				7EFCBA1EED240F20BE57F31F /* ObjectiveDDP.m in Sources */,
+				01B402D0FF640300346344D3 /* Pods-meteor-ios-starter-swift-ObjectiveDDP-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		323D76AC2D320E56F5C859A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-meteor-ios-starter-swift-ObjectiveDDP";
+			target = 4EDECCBA4B53EAF744DB1BA3 /* Pods-meteor-ios-starter-swift-ObjectiveDDP */;
+			targetProxy = E74A72602BB6D061631DD162 /* PBXContainerItemProxy */;
+		};
+		34A1A63F111B9C12B7A10EE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-meteor-ios-starter-swift-M13OrderedDictionary";
+			target = 9D8D81BC0127C3FEBBF59847 /* Pods-meteor-ios-starter-swift-M13OrderedDictionary */;
+			targetProxy = 980D71B3202AA30D24A2D762 /* PBXContainerItemProxy */;
+		};
+		5E172EE2FE77D99C541C2C2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-meteor-ios-starter-swift-SocketRocket";
+			target = DB0FB78E1BB4A8ECB217637A /* Pods-meteor-ios-starter-swift-SocketRocket */;
+			targetProxy = 36066375D30A7BD363F0ECA2 /* PBXContainerItemProxy */;
+		};
+		75EB513B238D66E06C37D98D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-meteor-ios-starter-swift-SocketRocket";
+			target = DB0FB78E1BB4A8ECB217637A /* Pods-meteor-ios-starter-swift-SocketRocket */;
+			targetProxy = 8EB59941AC545286626D2E55 /* PBXContainerItemProxy */;
+		};
+		BE6E804A616376D6F65D0956 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-meteor-ios-starter-swift-M13OrderedDictionary";
+			target = 9D8D81BC0127C3FEBBF59847 /* Pods-meteor-ios-starter-swift-M13OrderedDictionary */;
+			targetProxy = 34697D61D7F52A097CA05FB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		146001227BF896EF616FE204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19DC778E1CB54999BFD6B989 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1CEC064FD46207CEAC0C2935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8594462E8028DA740A57C3FB /* Pods-meteor-ios-starter-swift-ObjectiveDDP-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-meteor-ios-starter-swift-ObjectiveDDP/Pods-meteor-ios-starter-swift-ObjectiveDDP-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		48D3BBB3E3434AE0B70BF3D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2630348D3DE19A7D322B6AB6 /* Pods-meteor-ios-starter-swift-M13OrderedDictionary-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-meteor-ios-starter-swift-M13OrderedDictionary/Pods-meteor-ios-starter-swift-M13OrderedDictionary-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		68CA81914CCC6BEEF17B7234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8594462E8028DA740A57C3FB /* Pods-meteor-ios-starter-swift-ObjectiveDDP-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-meteor-ios-starter-swift-ObjectiveDDP/Pods-meteor-ios-starter-swift-ObjectiveDDP-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		69BC9CD94228CE091416B304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E4EF394D955DBE94938541 /* Pods-meteor-ios-starter-swift-SocketRocket-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-meteor-ios-starter-swift-SocketRocket/Pods-meteor-ios-starter-swift-SocketRocket-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8DC7D7414E02B21EFDD891AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F40D340C7DA462E5E4D7F7C3 /* Pods-meteor-ios-starter-swift.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A6EAFF45816575E98733FB46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2630348D3DE19A7D322B6AB6 /* Pods-meteor-ios-starter-swift-M13OrderedDictionary-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-meteor-ios-starter-swift-M13OrderedDictionary/Pods-meteor-ios-starter-swift-M13OrderedDictionary-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FD0A7028DC00096F25D28F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E4EF394D955DBE94938541 /* Pods-meteor-ios-starter-swift-SocketRocket-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-meteor-ios-starter-swift-SocketRocket/Pods-meteor-ios-starter-swift-SocketRocket-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FF82D83EEE989FB775560AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F2FE57F94759F19D1C6EEE /* Pods-meteor-ios-starter-swift.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1464258E2A92CA8EF6213CCE /* Build configuration list for PBXNativeTarget "Pods-meteor-ios-starter-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DC7D7414E02B21EFDD891AD /* Debug */,
+				FF82D83EEE989FB775560AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A19DBF3ED63A7C26E3EBB282 /* Build configuration list for PBXNativeTarget "Pods-meteor-ios-starter-swift-SocketRocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD0A7028DC00096F25D28F69 /* Debug */,
+				69BC9CD94228CE091416B304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB51A1B3459F560D36FB59D6 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DC778E1CB54999BFD6B989 /* Debug */,
+				146001227BF896EF616FE204 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD26D5AAB5822315895C5224 /* Build configuration list for PBXNativeTarget "Pods-meteor-ios-starter-swift-ObjectiveDDP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CA81914CCC6BEEF17B7234 /* Debug */,
+				1CEC064FD46207CEAC0C2935 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0A093C4CD80551AA4D28CDA /* Build configuration list for PBXNativeTarget "Pods-meteor-ios-starter-swift-M13OrderedDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48D3BBB3E3434AE0B70BF3D1 /* Debug */,
+				A6EAFF45816575E98733FB46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 780011EBABEA03297CD5329C /* Project object */;
+}
