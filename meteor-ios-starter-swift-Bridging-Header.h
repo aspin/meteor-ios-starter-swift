@@ -7,5 +7,3 @@
 #import "ObjectiveDDP.h"
 #import <ObjectiveDDP/MeteorClient.h>
 #import <ObjectiveDDP/BSONIdGenerator.h>
-
-#import "bridge.m"

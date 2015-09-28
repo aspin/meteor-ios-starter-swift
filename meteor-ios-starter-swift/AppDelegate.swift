@@ -18,11 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // the URL of your application. This'll probably typically be whatever your deployed *.meteor.com
     // domain is, but if you're testing with the iPhone emulator, you can also use localhost.
     // var meteorClient = initializeMeteor("1", "ws://meteor-ios-starter-swift.meteor.com/websocket")
-    var meteorClient = initializeMeteor("1", "ws://localhost:3000/websocket")
-
+    var meteorClient: MeteorClient!
+    let version = "1"
+    let endpoint = "ws://localhost:3000/websocket"
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        meteorClient = MeteorClient.init(DDPVersion: version)
+        let ddp = ObjectiveDDP.init(URLString: endpoint, delegate: meteorClient)
+        meteorClient.ddp = ddp
+        meteorClient.ddp.connectWebSocket()
         
         // Adds a subscription to a database. Not really necessary if you still have the autopublish package on. (?)
         self.meteorClient.addSubscription("cool_kids_collection")
@@ -127,7 +132,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
 }
 

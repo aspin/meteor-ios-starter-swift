@@ -13,7 +13,6 @@
 		AACB3A511B1593750069C70A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AACB3A501B1593750069C70A /* Images.xcassets */; };
 		AACB3A541B1593750069C70A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AACB3A521B1593750069C70A /* LaunchScreen.xib */; };
 		AACB3A601B1593750069C70A /* meteor_ios_starter_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB3A5F1B1593750069C70A /* meteor_ios_starter_swiftTests.swift */; };
-		AACB3A6B1B1593D80069C70A /* bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = AACB3A6A1B1593D80069C70A /* bridge.m */; };
 		FED553F6D100B9A488F05FAA /* libPods-meteor-ios-starter-swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CACAFDE33762B12D7F3D7829 /* libPods-meteor-ios-starter-swift.a */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +39,6 @@
 		AACB3A5E1B1593750069C70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AACB3A5F1B1593750069C70A /* meteor_ios_starter_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meteor_ios_starter_swiftTests.swift; sourceTree = "<group>"; };
 		AACB3A691B1593D70069C70A /* meteor-ios-starter-swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "meteor-ios-starter-swift-Bridging-Header.h"; sourceTree = "<group>"; };
-		AACB3A6A1B1593D80069C70A /* bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bridge.m; sourceTree = "<group>"; };
 		CACAFDE33762B12D7F3D7829 /* libPods-meteor-ios-starter-swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-meteor-ios-starter-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D519DDC3394A870316ACB57A /* Pods-meteor-ios-starter-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meteor-ios-starter-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-meteor-ios-starter-swift/Pods-meteor-ios-starter-swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,7 +82,6 @@
 		AACB3A3B1B1593750069C70A = {
 			isa = PBXGroup;
 			children = (
-				AACB3A6A1B1593D80069C70A /* bridge.m */,
 				AACB3A461B1593750069C70A /* meteor-ios-starter-swift */,
 				AACB3A5C1B1593750069C70A /* meteor-ios-starter-swiftTests */,
 				AACB3A451B1593750069C70A /* Products */,
@@ -278,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AACB3A6B1B1593D80069C70A /* bridge.m in Sources */,
 				AACB3A4C1B1593750069C70A /* ViewController.swift in Sources */,
 				AACB3A4A1B1593750069C70A /* AppDelegate.swift in Sources */,
 			);
