@@ -36,23 +36,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func reportConnection() {
-        println("================> connected to server!")
+        print("================> connected to server!")
     }
     
     func reportConnectionReady() {
-        println("================> server connection ready!")
+        print("================> server connection ready!")
         // e.g. You can start calling server methods or accessing the databases here!
         // (presumably, do any initialization here and bind other actions to events or buttons)
         
         // Example: calling a server method.
-        var paramData = ["param1": "cool", "param2": "kids"]
-        println("================> PING'ing the server!")
+        let paramData = ["param1": "cool", "param2": "kids"]
+        print("================> PING'ing the server!")
         self.meteorClient.callMethodName("ping", parameters: [paramData], responseCallback: { (response, err) -> Void in
             // response is an AnyObject dictionary, err is an NSError!
-            println(response)
+            print(response)
             // This is the actual return object. Cast as whatever type you're returning.
-            println(response["result"] as! String)
-            println("================> PING over.")
+            print(response["result"] as! String)
+            print("================> PING over.")
         })
         
         // Example: creating notifications for actions on the collection.
@@ -63,22 +63,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Example: inserting an object into a collection.
         var _id:String!
-        var newObject = ["param1": "here's an example", "param2": "cheers"]
-        println("================> Inserting an object!")
+        let newObject = ["param1": "here's an example", "param2": "cheers"]
+        print("================> Inserting an object!")
         self.meteorClient.callMethodName("/cool_kids_collection/insert", parameters: [newObject], responseCallback: { (response, err) -> Void in
 
             // The returned object is the inserted object, including its _id.
             // You need to cast do some funky casting, but it's alright...
-            println(response)
+            print(response)
             _id = ((response["result"] as! Array)[0] as Dictionary)["_id"]
-            println(_id)
+            print(_id)
             
-            println("================> Insertion successful!")
+            print("================> Insertion successful!")
             
             // Example: removing the previously inserted object.
             // Keep in mind that these calls are all asynchronous.
-            var removeQuery = ["_id": _id]
-            println("================> Removing an object!")
+            let removeQuery = ["_id": _id]
+            print("================> Removing an object!")
             self.meteorClient.callMethodName("/cool_kids_collection/remove", parameters: [removeQuery], responseCallback: nil)
         })
     }
@@ -88,22 +88,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // You MUST match up the number of arguments here with the selector, otherwise
     // you're going to get a runtime error.
     func itemAdded(res: NSNotification) {
-        println("================> Notification: Item was added.")
+        print("================> Notification: Item was added.")
         // println(res) // if you want to inspect the notification
         
         // The actually useful return info from an item being added.
         // In this example, it's the entry that was just added to the
         // collection you're observing.
         let returnInfo = res.userInfo as? Dictionary<String, String>
-        println(returnInfo)
+        print(returnInfo)
     }
     
     func itemRemoved() {
-        println("================> Notification: Item was removed.")
+        print("================> Notification: Item was removed.")
     }
     
     func reportDisconnection() {
-        println("================> disconnected from server!")
+        print("================> disconnected from server!")
     }
 
     func applicationWillResignActive(application: UIApplication) {

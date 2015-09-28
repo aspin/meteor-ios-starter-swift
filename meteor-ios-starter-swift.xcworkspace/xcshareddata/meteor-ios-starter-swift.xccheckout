@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E051D318-2688-4E8B-A5DC-C04711AFD116</string>
+	<key>IDESourceControlProjectName</key>
+	<string>meteor-ios-starter-swift</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>85FD8746C94A8C603F1AA0DF8E3F90DF92E30FFF</key>
+		<string>github.com:aspin/meteor-ios-starter-swift.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>meteor-ios-starter-swift.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>85FD8746C94A8C603F1AA0DF8E3F90DF92E30FFF</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:aspin/meteor-ios-starter-swift.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>85FD8746C94A8C603F1AA0DF8E3F90DF92E30FFF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>85FD8746C94A8C603F1AA0DF8E3F90DF92E30FFF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>meteor-ios-starter-swift</string>
+		</dict>
+	</array>
+</dict>
+</plist>
