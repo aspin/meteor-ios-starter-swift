@@ -12,29 +12,29 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    // Initializes the Meteor client, which is now interfaces the Meteor and iOS apps.
-    // The first argument is the DDP version number (pretty unimportant) and the second is
-    // the URL of your application. This'll probably typically be whatever your deployed *.meteor.com
-    // domain is, but if you're testing with the iPhone emulator, you can also use localhost.
-    // var meteorClient = initializeMeteor("1", "ws://meteor-ios-starter-swift.meteor.com/websocket")
+
+    // Meteor client configuration info.
+    // Version refers to the DDP version number (fairly unimportant, check Meteor website, and
+    // endpoint is the URL of your application. This'll probably typically be whatever your deployed 
+    // *.meteor.com domain is, but if you're testing with the iPhone emulator, you can also use localhost.
     var meteorClient: MeteorClient!
     let version = "1"
     let endpoint = "ws://localhost:3000/websocket"
+//    let endpoint = "ws://meteor-ios-starter-swift"
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        // Initializes MeteorClient
         meteorClient = MeteorClient.init(DDPVersion: version)
         let ddp = ObjectiveDDP.init(URLString: endpoint, delegate: meteorClient)
         meteorClient.ddp = ddp
         meteorClient.ddp.connectWebSocket()
         
-        // Adds a subscription to a database. Not really necessary if you still have the autopublish package on. (?)
-        self.meteorClient.addSubscription("cool_kids_collection")
+        // Adds a subscription to a database. Not really necessary if you still have the autopublish package on.
+        meteorClient.addSubscription("messages")
         
         // A few useful notifications to indicate when the Meteor client is fully connected.
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "reportConnection", name: MeteorClientDidConnectNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reportConnectionReady", name:         MeteorClientConnectionReadyNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reportConnectionReady", name: MeteorClientConnectionReadyNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "reportDisconnection", name: MeteorClientDidDisconnectNotification, object: nil)
         
         return true
@@ -47,10 +47,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func reportConnectionReady() {
         print("================> server connection ready!")
         // e.g. You can start calling server methods or accessing the databases here!
-        // (presumably, do any initialization here and bind other actions to events or buttons)
+        // In other controllers, you can mostly ignore checking for connection readiness --
+        // I do believe actions retry until they succeed.
         
         // Example: calling a server method.
-        let paramData = ["param1": "cool", "param2": "kids"]
+        let paramData = ["data": "You have been pinged!"]
         print("================> PING'ing the server!")
         self.meteorClient.callMethodName("ping", parameters: [paramData], responseCallback: { (response, err) -> Void in
             // response is an AnyObject dictionary, err is an NSError!
@@ -63,14 +64,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Example: creating notifications for actions on the collection.
         // Notice that there is a colon after "itemAdded" -- this indicates that
         // the selected callback function is expecting one argument.
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "itemAdded:", name: "cool_kids_collection_added", object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "itemRemoved", name: "cool_kids_collection_removed", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "itemAdded:", name: "messages_collection_added", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "itemRemoved", name: "messages_collection_removed", object: nil)
         
         // Example: inserting an object into a collection.
-        var _id:String!
-        let newObject = ["param1": "here's an example", "param2": "cheers"]
+        var _id: String!
+        let newObject = ["sender": "iOS Application", "content": "Hello from iOS!"]
         print("================> Inserting an object!")
-        self.meteorClient.callMethodName("/cool_kids_collection/insert", parameters: [newObject], responseCallback: { (response, err) -> Void in
+        self.meteorClient.callMethodName("/messages/insert", parameters: [newObject], responseCallback: { (response, err) -> Void in
 
             // The returned object is the inserted object, including its _id.
             // You need to cast do some funky casting, but it's alright...
@@ -82,9 +83,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             // Example: removing the previously inserted object.
             // Keep in mind that these calls are all asynchronous.
-            let removeQuery = ["_id": _id]
-            print("================> Removing an object!")
-            self.meteorClient.callMethodName("/cool_kids_collection/remove", parameters: [removeQuery], responseCallback: nil)
+//            let removeQuery = ["_id": _id]
+//            print("================> Removing an object!")
+//            self.meteorClient.callMethodName("/messages/remove", parameters: [removeQuery], responseCallback: nil)
         })
     }
     
@@ -94,7 +95,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // you're going to get a runtime error.
     func itemAdded(res: NSNotification) {
         print("================> Notification: Item was added.")
-        // println(res) // if you want to inspect the notification
+        // print(res) // if you want to inspect the notification
         
         // The actually useful return info from an item being added.
         // In this example, it's the entry that was just added to the

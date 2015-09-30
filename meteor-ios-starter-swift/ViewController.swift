@@ -29,5 +29,16 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func buttonPressed(sender: AnyObject) {
+        let paramData = ["data": "Pinging from button!"]
+        print("================> PING'ing the server!")
+        self.meteorClient.callMethodName("ping", parameters: [paramData], responseCallback: { (response, err) -> Void in
+            // response is an AnyObject dictionary, err is an NSError!
+            print(response)
+            // This is the actual return object. Cast as whatever type you're returning.
+            print(response["result"] as! String)
+            print("================> PING over.")
+        })
+    }
 }
 
